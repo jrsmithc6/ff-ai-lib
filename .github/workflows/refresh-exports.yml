@@ -1,0 +1,63 @@
+name: Refresh league exports
+
+on:
+  schedule:
+    - cron: '17 9 * * 2'
+      timezone: America/New_York
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'NFL week (1–18); leave blank for the current week'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-league-exports
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    # Keep both scheduled and manual exports on the default branch.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Test exporter
+        run: python -m unittest discover -s tests -v
+      - name: Restore and save player directory
+        uses: actions/cache@v6
+        with:
+          path: .cache/sleeper/players_nfl.json
+          key: sleeper-players-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: sleeper-players-v1-
+      - name: Generate briefing and archive
+        id: export
+        env:
+          REQUESTED_WEEK: ${{ inputs.week }}
+        run: python -m ff_ai_lib.automation
+      - name: Commit exports
+        if: steps.export.outputs.generated == 'true'
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- exports/
+          if git diff --cached --quiet; then
+            echo 'No export changes to publish.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m 'Refresh Sleeper league exports'
+          # If someone changed the branch during collection, fail visibly;
+          # never force-push over their work. Re-run to collect a fresh snapshot.
+          git push origin "HEAD:refs/heads/$DEFAULT_BRANCH"
+          echo 'Published latest briefing, snapshot, and dated archive to the repository.' >> "$GITHUB_STEP_SUMMARY"
