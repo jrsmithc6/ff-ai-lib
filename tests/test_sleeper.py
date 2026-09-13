@@ -56,6 +56,26 @@ class SleeperTests(unittest.TestCase):
                     build_snapshot(client, "123")
                 self.assertEqual(build_snapshot(client, "123", week=1)["week"], 1)
 
+    def test_previous_week_context_resolves_departed_players(self):
+        client = unittest.mock.Mock()
+        client.sources = {}
+        client.league.return_value = {"sport": "nfl", "season": "2026", "name": "Test", "status": "in_season", "roster_positions": [], "settings": {}, "scoring_settings": {}}
+        client.state.return_value = {"season": "2026", "season_type": "regular", "week": 2}
+        client.users.return_value = []
+        client.rosters.return_value = []
+        client.matchups.side_effect = lambda league, week: [{"roster_id": 1, "players": ["42"], "points": 110}] if week == 1 else []
+        client.transactions.side_effect = lambda league, week: [{"drops": {"42": 1}}] if week == 1 else []
+        client.traded_picks.return_value = []
+        client.drafts.return_value = []
+        client.players.return_value = {"42": {"full_name": "Former Player"}}
+        snapshot = build_snapshot(client, "123", week=2, include_previous_week=True)
+        self.assertEqual(snapshot["previous_week"]["week"], 1)
+        self.assertIn("42", snapshot["players"])
+        self.assertIn("Former Player", render_briefing(snapshot))
+        first_week = build_snapshot(client, "123", week=1, include_previous_week=True)
+        self.assertIsNone(first_week["previous_week"])
+        self.assertTrue(all(call.args[1] >= 1 for call in client.matchups.call_args_list))
+
 
 if __name__ == "__main__":
     unittest.main()

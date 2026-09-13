@@ -51,13 +51,21 @@ def render_briefing(snapshot):
             lines += ["", label + ": " + ("; ".join(player(pid) for pid in ids) or "None")]
         lines.append("")
     lines += ["## Matchups", "", "Records with the same non-null matchup_id are opponents. custom_points, when set, is the commissioner's override.", block(snapshot["matchups"]),
-              "", "## Transactions — selected week only", block(snapshot["transactions"]),
+              "", "## Transactions — selected week", block(snapshot["transactions"])]
+    previous = snapshot.get("previous_week")
+    if previous:
+        results = [{k: row.get(k) for k in ("roster_id", "matchup_id", "points", "custom_points")}
+                   for row in previous["matchups"]]
+        lines += ["", "## Previous week (%s) — waiver research context" % previous["week"],
+                  "Scores as reported by Sleeper; later corrections may occur.", block(results),
+                  "", "Previous-week transactions:", block(previous["transactions"])]
+    lines += [
               "", "## Traded future picks", block(snapshot["traded_picks"]),
               "", "## Drafts", block(snapshot["drafts"]),
               "", "Complete draft picks and the referenced player dictionary are in snapshot.json.",
               "", "## Transaction player names", ""]
     transaction_ids = set()
-    for item in snapshot["transactions"]:
+    for item in snapshot["transactions"] + (previous["transactions"] if previous else []):
         transaction_ids.update(item.get("adds") or {})
         transaction_ids.update(item.get("drops") or {})
     lines += ["- " + player(pid) for pid in sorted(transaction_ids)]
