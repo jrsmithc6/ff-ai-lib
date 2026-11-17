@@ -2,8 +2,8 @@
 
 League: Man vs Machine AI edition
 League ID: 1402459237195448320
-Season: 2026 | Week: 10 | Status: in_season
-Generated: 2026-11-10T20:50:47.438614+00:00
+Season: 2026 | Week: 11 | Status: in_season
+Generated: 2026-11-17T22:25:52.720998+00:00
 
 ## Operating rules
 
@@ -70,7 +70,7 @@ Settings:
 ```json
 {
   "best_ball": 0,
-  "last_report": 9,
+  "last_report": 10,
   "waiver_budget": 100,
   "disable_adds": 0,
   "capacity_override": 1,
@@ -87,7 +87,7 @@ Settings:
   "playoff_type": 0,
   "taxi_slots": 0,
   "sub_start_time_eligibility": 0,
-  "last_scored_leg": 9,
+  "last_scored_leg": 10,
   "daily_waivers_days": 5461,
   "sub_lock_if_starter_active": 0,
   "playoff_week_start": 15,
@@ -116,7 +116,7 @@ Settings:
   "trade_review_days": 2,
   "bench_lock": 0,
   "offseason_adds": 0,
-  "leg": 9,
+  "leg": 10,
   "reserve_slots": 1,
   "reserve_allow_cov": 0,
   "daily_waivers_last_ran": 8
@@ -144,13 +144,13 @@ Manager identities below were supplied by Jacoby; team names and ownership come 
 Record and roster settings:
 ```json
 {
-  "fpts": 1156,
-  "fpts_against": 1093,
-  "fpts_against_decimal": 98,
-  "fpts_decimal": 48,
-  "losses": 4,
-  "ppts": 1372,
-  "ppts_decimal": 36,
+  "fpts": 1210,
+  "fpts_against": 1229,
+  "fpts_against_decimal": 4,
+  "fpts_decimal": 10,
+  "losses": 5,
+  "ppts": 1479,
+  "ppts_decimal": 82,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
@@ -160,17 +160,17 @@ Record and roster settings:
 ```
 
 Starters:
-- QB: Drake Maye [11564] (QB, NE)
+- QB: Drake Maye [11564] (QB, NE, Out)
 - RB: Ashton Jeanty [12527] (RB, LV)
 - RB: D'Andre Swift [6790] (RB, CHI)
 - WR: Amon-Ra St. Brown [7547] (WR, DET)
 - WR: Jalen Coker [11646] (WR, CAR)
 - TE: Tyler Warren [12518] (TE, IND)
-- FLEX: Kenneth Walker III [8151] (RB, KC)
+- FLEX: Kenneth Walker III [8151] (RB, KC, Out)
 - FLEX: Javonte Williams [7588] (RB, DAL)
 - DEF: Baltimore Ravens [BAL] (DEF, BAL)
 
-Bench: Xavier Worthy [11624] (WR, KC, Out); Matthew Golden [12501] (WR, GB); Omarion Hampton [12507] (RB, LAC); Emeka Egbuka [12514] (WR, TB); Jacory Croskey-Merritt [12533] (RB, WAS, IR); Jadarian Price [13286] (RB, SEA); Justin Herbert [6797] (QB, LAC, Questionable)
+Bench: Xavier Worthy [11624] (WR, KC); Matthew Golden [12501] (WR, GB); Omarion Hampton [12507] (RB, LAC); Emeka Egbuka [12514] (WR, TB); Jacory Croskey-Merritt [12533] (RB, WAS, IR); Jadarian Price [13286] (RB, SEA); Justin Herbert [6797] (QB, LAC)
 
 Reserve: None
 
@@ -193,13 +193,13 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 829,
-  "fpts_against": 1113,
-  "fpts_against_decimal": 74,
-  "fpts_decimal": 12,
-  "losses": 8,
-  "ppts": 1202,
-  "ppts_decimal": 68,
+  "fpts": 883,
+  "fpts_against": 1202,
+  "fpts_against_decimal": 54,
+  "fpts_decimal": 22,
+  "losses": 9,
+  "ppts": 1315,
+  "ppts_decimal": 88,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
@@ -212,14 +212,14 @@ Starters:
 - QB: Jalen Hurts [6904] (QB, PHI, IR)
 - RB: Saquon Barkley [4866] (RB, PHI)
 - RB: Breece Hall [8155] (RB, NYJ)
-- WR: Puka Nacua [9493] (WR, LAR, Questionable)
-- WR: Drake London [8112] (WR, ATL)
+- WR: Puka Nacua [9493] (WR, LAR, IR)
+- WR: Drake London [8112] (WR, ATL, Questionable)
 - TE: George Kittle [4217] (TE, SF)
 - FLEX: Jameson Williams [8148] (WR, DET)
 - FLEX: Terry McLaurin [5927] (WR, WAS, IR)
 - DEF: Denver Broncos [DEN] (DEF, DEN)
 
-Bench: Woody Marks [12474] (RB, HOU); Courtland Sutton [5045] (WR, DEN); Kyler Murray [5849] (QB, MIN, Out); Tony Pollard [5967] (RB, TEN); J.K. Dobbins [6806] (RB, DEN); Isaiah Likely [8131] (TE, NYG); Rachaad White [8136] (RB, WAS)
+Bench: Woody Marks [12474] (RB, HOU, Out); Courtland Sutton [5045] (WR, DEN); Kyler Murray [5849] (QB, MIN, Out); Tony Pollard [5967] (RB, TEN); J.K. Dobbins [6806] (RB, DEN); Isaiah Likely [8131] (TE, NYG); Rachaad White [8136] (RB, WAS)
 
 Reserve: None
 
@@ -242,25 +242,25 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 1125,
-  "fpts_against": 957,
-  "fpts_against_decimal": 20,
-  "fpts_decimal": 56,
+  "fpts": 1260,
+  "fpts_against": 1073,
+  "fpts_against_decimal": 24,
+  "fpts_decimal": 32,
   "losses": 2,
-  "ppts": 1281,
-  "ppts_decimal": 36,
+  "ppts": 1429,
+  "ppts_decimal": 62,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
   "waiver_position": 2,
-  "wins": 7
+  "wins": 8
 }
 ```
 
 Starters:
 - QB: Jayden Daniels [11566] (QB, WAS)
 - RB: Christian McCaffrey [4034] (RB, SF)
-- RB: MarShawn Lloyd [11581] (RB, GB, Out)
+- RB: MarShawn Lloyd [11581] (RB, GB)
 - WR: Jaxon Smith-Njigba [9488] (WR, SEA)
 - WR: Malik Nabers [11632] (WR, NYG)
 - TE: Juwan Johnson [7002] (TE, NO)
@@ -268,7 +268,7 @@ Starters:
 - FLEX: Tetairoa McMillan [12526] (WR, CAR)
 - DEF: Jacksonville Jaguars [JAX] (DEF, JAX)
 
-Bench: TreVeyon Henderson [12529] (RB, NE, Out); Kaelon Black [13414] (RB, SF); Chris Godwin Jr. [4037] (WR, TB); Josh Jacobs [5850] (RB, GB, Out); Rico Dowdle [7021] (RB, PIT); Jordan Mason [8408] (RB, MIN); Zay Flowers [9997] (WR, BAL)
+Bench: TreVeyon Henderson [12529] (RB, NE, IR); Kaelon Black [13414] (RB, SF); Chris Godwin Jr. [4037] (WR, TB); Josh Jacobs [5850] (RB, GB, Out); Rico Dowdle [7021] (RB, PIT); Jordan Mason [8408] (RB, MIN); Zay Flowers [9997] (WR, BAL)
 
 Reserve: James Conner [4137] (RB, ARI, IR)
 
@@ -291,13 +291,13 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 765,
-  "fpts_against": 1055,
-  "fpts_against_decimal": 82,
-  "fpts_decimal": 68,
-  "losses": 6,
-  "ppts": 1151,
-  "ppts_decimal": 88,
+  "fpts": 882,
+  "fpts_against": 1243,
+  "fpts_against_decimal": 88,
+  "fpts_decimal": 46,
+  "losses": 7,
+  "ppts": 1275,
+  "ppts_decimal": 46,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
@@ -309,15 +309,15 @@ Record and roster settings:
 Starters:
 - QB: Trevor Lawrence [7523] (QB, JAX)
 - RB: Bijan Robinson [9509] (RB, ATL)
-- RB: Travis Etienne Jr. [7543] (RB, NO, IR)
+- RB: Travis Etienne Jr. [7543] (RB, NO)
 - WR: Adonai Mitchell [11625] (WR, NYJ)
-- WR: Garrett Wilson [8146] (WR, NYJ, Out)
-- TE: Oronde Gadsden [12493] (TE, LAC)
+- WR: Garrett Wilson [8146] (WR, NYJ)
+- TE: Oronde Gadsden [12493] (TE, LAC, Questionable)
 - FLEX: DJ Moore [4983] (WR, BUF)
-- FLEX: Josh Downs [9500] (WR, IND)
+- FLEX: Josh Downs [9500] (WR, KC)
 - DEF: Green Bay Packers [GB] (DEF, GB)
 
-Bench: Tre Tucker [10213] (WR, LV); Brock Bowers [11604] (TE, LV); Tre' Harris [12509] (WR, LAC); De'Zhaun Stribling [13417] (WR, SF, IR); A.J. Brown [5859] (WR, NE, Out); Tyler Allgeier [8132] (RB, ARI); Pittsburgh Steelers [PIT] (DEF, PIT)
+Bench: Tre Tucker [10213] (WR, LV); Brock Bowers [11604] (TE, LV, Out); Tre' Harris [12509] (WR, LAC); De'Zhaun Stribling [13417] (WR, SF, IR); A.J. Brown [5859] (WR, NE, Out); Tyler Allgeier [8132] (RB, ARI); Pittsburgh Steelers [PIT] (DEF, PIT)
 
 Reserve: Tank Dell [9502] (WR, HOU)
 
@@ -340,18 +340,18 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 1198,
-  "fpts_against": 860,
-  "fpts_against_decimal": 24,
-  "fpts_decimal": 74,
+  "fpts": 1333,
+  "fpts_against": 913,
+  "fpts_against_decimal": 86,
+  "fpts_decimal": 80,
   "losses": 2,
-  "ppts": 1498,
-  "ppts_decimal": 44,
+  "ppts": 1690,
+  "ppts_decimal": 10,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
   "waiver_position": 1,
-  "wins": 7
+  "wins": 8
 }
 ```
 
@@ -360,13 +360,13 @@ Starters:
 - RB: James Cook III [8138] (RB, BUF)
 - RB: Bucky Irving [11584] (RB, TB)
 - WR: Justin Jefferson [6794] (WR, MIN)
-- WR: George Pickens [8137] (WR, DAL, Out)
+- WR: George Pickens [8137] (WR, DAL)
 - TE: Trey McBride [8130] (TE, ARI)
 - FLEX: Tee Higgins [6801] (WR, CIN)
 - FLEX: Jaylen Waddle [7526] (WR, DEN, Out)
 - DEF: Tampa Bay Buccaneers [TB] (DEF, TB)
 
-Bench: Dallas Goedert [5022] (TE, PHI); DK Metcalf [5846] (WR, PIT); Chuba Hubbard [7594] (RB, CAR); Jaylen Warren [8228] (RB, PIT); Rashid Shaheed [8676] (WR, SEA, Out); Jordan Addison [9756] (WR, MIN); Houston Texans [HOU] (DEF, HOU)
+Bench: Dallas Goedert [5022] (TE, PHI); DK Metcalf [5846] (WR, PIT); Chuba Hubbard [7594] (RB, CAR); Jaylen Warren [8228] (RB, PIT); Rashid Shaheed [8676] (WR, SEA); Jordan Addison [9756] (WR, MIN, Out); Houston Texans [HOU] (DEF, HOU)
 
 Reserve: None
 
@@ -389,18 +389,18 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 1145,
-  "fpts_against": 1036,
-  "fpts_against_decimal": 70,
-  "fpts_decimal": 80,
+  "fpts": 1333,
+  "fpts_against": 1153,
+  "fpts_against_decimal": 48,
+  "fpts_decimal": 86,
   "losses": 4,
-  "ppts": 1329,
-  "ppts_decimal": 2,
+  "ppts": 1534,
+  "ppts_decimal": 54,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
   "waiver_position": 8,
-  "wins": 5
+  "wins": 6
 }
 ```
 
@@ -410,12 +410,12 @@ Starters:
 - RB: Chase Brown [9224] (RB, CIN)
 - WR: Rashee Rice [10229] (WR, KC)
 - WR: Nico Collins [7569] (WR, HOU)
-- TE: Travis Kelce [1466] (TE, KC)
+- TE: Travis Kelce [1466] (TE, KC, Questionable)
 - FLEX: Bhayshul Tuten [12490] (RB, JAX)
-- FLEX: Luther Burden III [12519] (WR, CHI, Questionable)
-- DEF: New Orleans Saints [NO] (DEF, NO)
+- FLEX: Omar Cooper Jr. [13276] (WR, NYJ, Out)
+- DEF: Minnesota Vikings [MIN] (DEF, MIN)
 
-Bench: Michael Wilson [10232] (WR, ARI, Out); Omar Cooper Jr. [13276] (WR, NYJ); Denzel Boston [13346] (WR, CLE); Seth McGowan [13424] (RB, IND); Patrick Mahomes [4046] (QB, KC, Questionable); Devin Singletary [6130] (RB, NYG); Minnesota Vikings [MIN] (DEF, MIN)
+Bench: Audric Estime [11579] (RB, NO); Luther Burden III [12519] (WR, CHI, Questionable); Denzel Boston [13346] (WR, CLE); Seth McGowan [13424] (RB, IND); Keenan Allen [1479] (WR, SF); Patrick Mahomes [4046] (QB, KC); Devin Singletary [6130] (RB, NYG)
 
 Reserve: DeVonta Smith [7525] (WR, PHI, Out)
 
@@ -438,18 +438,18 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 748,
-  "fpts_against": 990,
-  "fpts_against_decimal": 58,
-  "fpts_decimal": 96,
+  "fpts": 837,
+  "fpts_against": 1044,
+  "fpts_against_decimal": 68,
+  "fpts_decimal": 76,
   "losses": 8,
-  "ppts": 1113,
-  "ppts_decimal": 20,
+  "ppts": 1222,
+  "ppts_decimal": 40,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
   "waiver_position": 6,
-  "wins": 1
+  "wins": 2
 }
 ```
 
@@ -458,7 +458,7 @@ Starters:
 - RB: Derrick Henry [3198] (RB, BAL)
 - RB: De'Von Achane [9226] (RB, MIA, IR)
 - WR: Ja'Marr Chase [7564] (WR, CIN)
-- WR: Ladd McConkey [11635] (WR, LAC, Questionable)
+- WR: Ladd McConkey [11635] (WR, LAC, Out)
 - TE: Sam LaPorta [10859] (TE, DET)
 - FLEX: David Montgomery [5892] (RB, HOU, Out)
 - FLEX: Quinshon Judkins [12512] (RB, CLE)
@@ -487,13 +487,13 @@ Taxi: None
 Record and roster settings:
 ```json
 {
-  "fpts": 1138,
-  "fpts_against": 1000,
-  "fpts_against_decimal": 56,
-  "fpts_decimal": 48,
-  "losses": 2,
-  "ppts": 1389,
-  "ppts_decimal": 72,
+  "fpts": 1254,
+  "fpts_against": 1135,
+  "fpts_against_decimal": 32,
+  "fpts_decimal": 52,
+  "losses": 3,
+  "ppts": 1541,
+  "ppts_decimal": 26,
   "ties": 0,
   "total_moves": 0,
   "waiver_budget_used": 0,
@@ -509,7 +509,7 @@ Starters:
 - WR: CeeDee Lamb [6786] (WR, DAL)
 - WR: Stefon Diggs [2449] (WR, WAS)
 - TE: Colston Loveland [12517] (TE, CHI)
-- FLEX: Rhamondre Stevenson [7611] (RB, NE, Out)
+- FLEX: Rhamondre Stevenson [7611] (RB, NE)
 - FLEX: Parker Washington [9487] (WR, JAX)
 - DEF: Cincinnati Bengals [CIN] (DEF, CIN)
 
@@ -546,7 +546,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "roster_id": 1,
     "custom_points": null,
-    "matchup_id": 4,
+    "matchup_id": 3,
     "starters": [
       "11564",
       "12527",
@@ -610,7 +610,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "roster_id": 2,
     "custom_points": null,
-    "matchup_id": 3,
+    "matchup_id": 4,
     "starters": null,
     "starters_points": [],
     "players_points": {
@@ -655,7 +655,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "roster_id": 3,
     "custom_points": null,
-    "matchup_id": 2,
+    "matchup_id": 1,
     "starters": [
       "11566",
       "4034",
@@ -832,13 +832,14 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     "points": 0.0,
     "players": [
       "10229",
-      "10232",
+      "11579",
       "12490",
       "12519",
       "13276",
       "13346",
       "13424",
       "1466",
+      "1479",
       "4046",
       "6130",
       "7525",
@@ -846,12 +847,11 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
       "8183",
       "9221",
       "9224",
-      "MIN",
-      "NO"
+      "MIN"
     ],
     "roster_id": 6,
     "custom_points": null,
-    "matchup_id": 1,
+    "matchup_id": 2,
     "starters": [
       "8183",
       "9221",
@@ -860,8 +860,8 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
       "7569",
       "1466",
       "12490",
-      "12519",
-      "NO"
+      "13276",
+      "MIN"
     ],
     "starters_points": [
       0.0,
@@ -876,13 +876,14 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "players_points": {
       "10229": 0.0,
-      "10232": 0.0,
+      "11579": 0.0,
       "12490": 0.0,
       "12519": 0.0,
       "13276": 0.0,
       "13346": 0.0,
       "13424": 0.0,
       "1466": 0.0,
+      "1479": 0.0,
       "4046": 0.0,
       "6130": 0.0,
       "7525": 0.0,
@@ -890,8 +891,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
       "8183": 0.0,
       "9221": 0.0,
       "9224": 0.0,
-      "MIN": 0.0,
-      "NO": 0.0
+      "MIN": 0.0
     }
   },
   {
@@ -916,7 +916,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "roster_id": 7,
     "custom_points": null,
-    "matchup_id": 3,
+    "matchup_id": 2,
     "starters": null,
     "starters_points": [],
     "players_points": {
@@ -960,7 +960,7 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
     ],
     "roster_id": 8,
     "custom_points": null,
-    "matchup_id": 2,
+    "matchup_id": 3,
     "starters": [
       "4984",
       "6813",
@@ -1010,56 +1010,56 @@ Records with the same non-null matchup_id are opponents. custom_points, when set
 []
 ```
 
-## Previous week (9) — waiver research context
+## Previous week (10) — waiver research context
 Scores as reported by Sleeper; later corrections may occur.
 ```json
 [
   {
     "roster_id": 1,
     "matchup_id": 4,
-    "points": 123.66,
+    "points": 53.62,
     "custom_points": null
   },
   {
     "roster_id": 2,
-    "matchup_id": 2,
-    "points": 90.5,
+    "matchup_id": 3,
+    "points": 54.1,
     "custom_points": null
   },
   {
     "roster_id": 3,
-    "matchup_id": 3,
-    "points": 113.46,
+    "matchup_id": 2,
+    "points": 134.76,
     "custom_points": null
   },
   {
     "roster_id": 4,
     "matchup_id": 1,
-    "points": 68.98,
+    "points": 116.78,
     "custom_points": null
   },
   {
     "roster_id": 5,
-    "matchup_id": 3,
-    "points": 131.34,
+    "matchup_id": 4,
+    "points": 135.06,
     "custom_points": null
   },
   {
     "roster_id": 6,
-    "matchup_id": 2,
-    "points": 127.48,
+    "matchup_id": 1,
+    "points": 188.06,
     "custom_points": null
   },
   {
     "roster_id": 7,
-    "matchup_id": 4,
-    "points": 65.78,
+    "matchup_id": 3,
+    "points": 88.8,
     "custom_points": null
   },
   {
     "roster_id": 8,
-    "matchup_id": 1,
-    "points": 116.26,
+    "matchup_id": 2,
+    "points": 116.04,
     "custom_points": null
   }
 ]
@@ -1067,54 +1067,7 @@ Scores as reported by Sleeper; later corrections may occur.
 
 Previous-week transactions:
 ```json
-[
-  {
-    "status": "complete",
-    "type": "free_agent",
-    "metadata": null,
-    "created": 1794150978763,
-    "settings": null,
-    "leg": 9,
-    "draft_picks": [],
-    "creator": "994670168720617472",
-    "transaction_id": "1425176136618344448",
-    "adds": {
-      "6130": 6
-    },
-    "consenter_ids": [
-      6
-    ],
-    "drops": null,
-    "roster_ids": [
-      6
-    ],
-    "status_updated": 1794150978763,
-    "waiver_budget": []
-  },
-  {
-    "status": "complete",
-    "type": "free_agent",
-    "metadata": null,
-    "created": 1793844740892,
-    "settings": null,
-    "leg": 9,
-    "draft_picks": [],
-    "creator": "994670168720617472",
-    "transaction_id": "1423891681891123200",
-    "adds": null,
-    "consenter_ids": [
-      6
-    ],
-    "drops": {
-      "13274": 6
-    },
-    "roster_ids": [
-      6
-    ],
-    "status_updated": 1793844740892,
-    "waiver_budget": []
-  }
-]
+[]
 ```
 
 ## Traded future picks
@@ -1186,8 +1139,6 @@ Complete draft picks and the referenced player dictionary are in snapshot.json.
 
 ## Transaction player names
 
-- Germie Bernard [13274] (WR, PIT)
-- Devin Singletary [6130] (RB, NYG)
 
 ## Data limitations
 
@@ -1199,17 +1150,17 @@ Complete draft picks and the referenced player dictionary are in snapshot.json.
 ## Source fetch times
 ```json
 {
-  "https://api.sleeper.app/v1/league/1402459237195448320": "2026-11-10T20:50:44.914166+00:00",
-  "https://api.sleeper.app/v1/state/nfl": "2026-11-10T20:50:44.932631+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/users": "2026-11-10T20:50:45.058001+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/rosters": "2026-11-10T20:50:45.186775+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/matchups/10": "2026-11-10T20:50:45.414915+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/transactions/10": "2026-11-10T20:50:45.525627+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/matchups/9": "2026-11-10T20:50:45.667919+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/transactions/9": "2026-11-10T20:50:45.805404+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/traded_picks": "2026-11-10T20:50:45.916435+00:00",
-  "https://api.sleeper.app/v1/league/1402459237195448320/drafts": "2026-11-10T20:50:46.008400+00:00",
-  "https://api.sleeper.app/v1/draft/1402459239049379840/picks": "2026-11-10T20:50:46.169928+00:00",
-  "https://api.sleeper.app/v1/players/nfl": "2026-11-10T20:50:46.588818+00:00"
+  "https://api.sleeper.app/v1/league/1402459237195448320": "2026-11-17T22:25:50.798984+00:00",
+  "https://api.sleeper.app/v1/state/nfl": "2026-11-17T22:25:50.824925+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/users": "2026-11-17T22:25:50.887136+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/rosters": "2026-11-17T22:25:50.960780+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/matchups/11": "2026-11-17T22:25:51.331507+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/transactions/11": "2026-11-17T22:25:51.397981+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/matchups/10": "2026-11-17T22:25:51.481461+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/transactions/10": "2026-11-17T22:25:51.547091+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/traded_picks": "2026-11-17T22:25:51.619522+00:00",
+  "https://api.sleeper.app/v1/league/1402459237195448320/drafts": "2026-11-17T22:25:51.683326+00:00",
+  "https://api.sleeper.app/v1/draft/1402459239049379840/picks": "2026-11-17T22:25:51.805528+00:00",
+  "https://api.sleeper.app/v1/players/nfl": "2026-11-17T22:25:52.137476+00:00"
 }
 ```
